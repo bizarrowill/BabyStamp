@@ -12,26 +12,26 @@ var db = require("../models");
 // =============================================================
 module.exports = function(app) {
 
-  // GET route for getting all of the todos
-  app.get("/api/todos", function(req, res) {
+  // GET route for getting all of the naps
+  app.get("/api/naps", function(req, res) {
     // findAll returns all entries for a table when used with no options
-    db.Todo.findAll({}).then(function(dbTodo) {
-      // We have access to the todos as an argument inside of the callback function
-      res.json(dbTodo);
+    db.Nap.findAll({}).then(function(dbNap) {
+      // We have access to the naps as an argument inside of the callback function
+      res.json(dbNap);
     });
   });
 
-  // POST route for saving a new todo
-  app.post("/api/todos", function(req, res) {
+  // POST route for saving a new Nap
+  app.post("/api/naps", function(req, res) {
     // create takes an argument of an object describing the item we want to
     // insert into our table. In this case we just we pass in an object with a text
     // and complete property (req.body)
-    db.Todo.create({
+    db.Nap.create({
       text: req.body.text,
       complete: req.body.complete
-    }).then(function(dbTodo) {
-      // We have access to the new todo as an argument inside of the callback function
-      res.json(dbTodo);
+    }).then(function(dbNap) {
+      // We have access to the new Nap as an argument inside of the callback function
+      res.json(dbNap);
     })
     .catch(function(err) {
       // Whenever a validation or flag fails, an error is thrown
@@ -40,34 +40,34 @@ module.exports = function(app) {
     });
   });
 
-  // DELETE route for deleting todos. We can get the id of the todo to be deleted from
+  // DELETE route for deleting naps. We can get the id of the Nap to be deleted from
   // req.params.id
-  app.delete("/api/todos/:id", function(req, res) {
-    // We just have to specify which todo we want to destroy with "where"
-    db.Todo.destroy({
+  app.delete("/api/naps/:id", function(req, res) {
+    // We just have to specify which Nap we want to destroy with "where"
+    db.Nap.destroy({
       where: {
         id: req.params.id
       }
-    }).then(function(dbTodo) {
-      res.json(dbTodo);
+    }).then(function(dbNap) {
+      res.json(dbNap);
     });
 
   });
 
-  // PUT route for updating todos. We can get the updated todo data from req.body
-  app.put("/api/todos", function(req, res) {
+  // PUT route for updating naps. We can get the updated Nap data from req.body
+  app.put("/api/naps", function(req, res) {
 
     // Update takes in an object describing the properties we want to update, and
     // we use where to describe which objects we want to update
-    db.Todo.update({
+    db.Nap.update({
       text: req.body.text,
       complete: req.body.complete
     }, {
       where: {
         id: req.body.id
       }
-    }).then(function(dbTodo) {
-      res.json(dbTodo);
+    }).then(function(dbNap) {
+      res.json(dbNap);
     })
     .catch(function(err) {
       // Whenever a validation or flag fails, an error is thrown

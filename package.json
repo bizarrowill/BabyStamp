@@ -1,20 +1,24 @@
 {
-  "name": "smokin space jam",
+  "name": "smokinspacejam",
   "version": "1.0.0",
-  "description": "",
+  "description": "An app to log important baby data",
   "main": "server.js",
+  "dependencies": {
+    "sequelize": "^4.33.4"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "watch": "nodemon server.js"
+    "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bizarrowill/SmokinSpaceJam.git"
+  },
+  "author": "William Robertson David Thompson Jean-Phillip Lamarre",
   "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0",
-    "mysql2": "^1.3.6",
-    "sequelize": "^4.3.1"
-  }
+  "bugs": {
+    "url": "https://github.com/bizarrowill/SmokinSpaceJam/issues"
+  },
+  "homepage": "https://github.com/bizarrowill/SmokinSpaceJam#readme"
 }
