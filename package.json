@@ -4,6 +4,9 @@
   "description": "An app to log important baby data",
   "main": "server.js",
   "dependencies": {
+    "express": "^4.16.2",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.2",
     "sequelize": "^4.33.4"
   },
   "devDependencies": {},

@@ -29,7 +29,7 @@ $(document).ready(function() {
 
   // This function grabs naps from the database and updates the view
   function getNaps() {
-    $.get("/api/napss", function(data) {
+    $.get("/api/naps", function(data) {
       naps = data;
       initializeRows();
     });
