@@ -3,9 +3,9 @@
 <h2>Babies that are not sleepy!</h2>
 
 <ul>
-  {{#each naps}}
+  {{#each stamps}}
     {{#unless sleepy}}
-      {{> naps/nap-block sleep=true}}
+      {{> stamps/stamp-block sleep=true}}
     {{/unless}}
   {{/each}}
 </ul>
@@ -13,18 +13,18 @@
 <h2>Babies that are sleepy!</h2>
 
 <ul>
-  {{#each Nap}}
+  {{#each Stamp}}
     {{#if sleepy}}
-      {{> naps/nap-block sleep=false}}
+      {{> stamps/stamp-block sleep=false}}
     {{/if}}
   {{/each}}
 </ul>
 
-<h2>Add a Nap</h2>
+<h2>Add a Stamp</h2>
 <form class="create-form">
 
   <div class="form-group">
-    <label for="ca">Nap Name:</label>
+    <label for="ca">Stamp Name:</label>
     <input type="text" id="ca" name="name">
   </div>
 
@@ -34,5 +34,5 @@
     <input type="radio" name="sleepy" value="0"> Awake
   </div>
 
-  <button type="submit">Add Nap</button>
+  <button type="submit">Add Stamp</button>
 </form>
