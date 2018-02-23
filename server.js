@@ -28,6 +28,8 @@ app.use(express.static("public"));
 // Set Handlebars.
 var exphbs = require("express-handlebars");
 
+//________________________________________________________________
+//Direct us to where the handle bars gets pointed at 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
