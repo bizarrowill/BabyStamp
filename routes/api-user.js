@@ -16,6 +16,6 @@ module.exports = function(app) {
                 username: req.user.username
             }
         }
-        res.render("index",hbsObj)
+        res.render("loginpage",hbsObj)
     })
 }

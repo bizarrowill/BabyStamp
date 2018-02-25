@@ -4,7 +4,7 @@ var application = application = require('./application');
 
 module.exports = function(app) {
     app.get('/login', application.IsAuthenticated, function(req,res) {
-        res.redirect("landing")
+        res.redirect("index")
     })
 
     app.post('/authenticate',
