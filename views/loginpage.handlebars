@@ -1,0 +1,30 @@
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-blue">
+  <div class="w3-jumbo w3-animate-top w3-center">
+    <h1 class="index-header">Baby Stamp</h1>
+  </div>
+ 
+  <div class="w3-row">
+    <div id="loginBox" class="w3-container w3-col s6 w3-animate-top w3-mobile w3-center">
+      <!-- action="/" method="POST" -->
+        <form class="w3-panel w3-card-4" action="/authenticate" method="post">
+          <h2 style="text-align: center">Returning User?</h2>
+            <h3><label>Username</label></h3>
+                <input class="w3-input" type="text" id="username" name="username" pattern="[a-zA-Z0-9\s]{0,30}" title="Alphanumeric characters only" placeholder="Username" required>
+            <h3><label>Password</label></h3>
+                <input class="w3-input" type="password" id="password" name="password" placeholder="Password" required>
+            <button type="submit" class="w3-button w3-green loginBtn">Login</button>
+        </form>
+    </div>
+
+
+
+  
+
+    <div class="w3-container w3-col s6 w3-animate-top w3-mobile w3-center index-main">
+      <div class="w3-panel w3-card-4 w3-center">
+        <h2><a href="/signup" class="w3-hover-blue">Need to signup?</a></h2>
+      </div>
+    </div> <!-- end second column for registration link -->
+  </div> <!-- end row -->
+</div> <!-- end main container -->
+
