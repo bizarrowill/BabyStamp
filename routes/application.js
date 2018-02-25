@@ -1,5 +1,5 @@
 exports.IsAuthenticated = function(req, res, next){
-    // console.log(req);
+
 	if(req.isAuthenticated()){
 		console.log("IsAuthenticated worked");
 		next();

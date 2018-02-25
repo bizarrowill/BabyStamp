@@ -22,10 +22,7 @@ module.exports = function(sequelize, DataTypes) {
             }
         })
     };
-    // User.associate = function(models) {
-    //     User.hasMany(models.log);
-    //     User.hasMany(models.goal);
-    // };
+
     //encryption occurs here before password logged to database
     User.hook('beforeCreate', function(user, fn){
         var salt = bcrypt.genSalt(SALT_WORK_FACTOR, function(err, salt){

@@ -15,7 +15,7 @@ var http = require('http');
 var passport = require('passport');
 var passportConfig = require('./config/passport')
 var application = require('./routes/application');
-// var routes = require("./routes");
+
 
 SALT_WORK_FACTOR = 12;
 //dave
@@ -77,19 +77,8 @@ require("./routes/html-routes.js")(app);
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
 //dave
-db.sequelize.sync()//{force:true}
+db.sequelize.sync()
 	.then(function(err){
-		// if (err) {
-		// 	throw err[0]
-		// } else {
-		// db.User.find({where: {username: 'admin'}}).then(function (user){
-		// 	if (!user) {
-		// 		db.User.build({
-		// 			username: 'admin', 
-		// 			password: '1234', 
-		// 			first_name: 'Test', 
-		// 			last_name: 'User'}).save();
-		// 	};
 		});
 		app.listen(PORT, function() {
 			console.log("App listening on PORT: " + PORT);
