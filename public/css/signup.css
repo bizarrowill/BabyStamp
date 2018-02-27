@@ -1,0 +1,19 @@
+
+
+
+/* Baby Stamp */
+h1 {
+position: absolute;
+width: 292px;
+height: 331px;
+left: 276px;
+top: 331px;
+
+font-family: Inika;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 96px;
+
+color: #000000;
+}

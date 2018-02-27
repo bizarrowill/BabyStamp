@@ -1,25 +1,40 @@
 <div class="container">
-<div class="w3-row">
+    <div class="w3-row">
 
-  <div id="register" class="w3-col s6 w3-mobile">
-      <!-- action="/" method="POST" -->
-      <form class="w3-panel w3-card-4" action="/register" method="post">
-      <h2 style="text-align: center">New User?</h2>
-      {{!-- PLEASE check with Jonathan before changing any of the form's 'name=' attributes. very important --}}
-      {{!-- <h3><label>First Name</label></h3> --}}
-          <input class="w3-input" type="text" id="reg_fn" name="firstName" pattern="[a-zA-Z\s]{0,30}" placeholder="First Name" title="Alphabet Characters Only" required>
-          {{!-- <h3><label>Last Name</label></h3> --}}
-          <input class="w3-input" type="text" id="reg_ln" name="lastName" pattern="[a-zA-Z\s]{0,30}" placeholder="Last Name" title="Alphabet Characters Only" required>
-      {{!-- <h3><label>Username</label></h3> --}}
-          <input class="w3-input" type="text" id="reg_username" name="username" pattern="[a-zA-Z0-9\s]{0,30}" placeholder="Username" title="Alphanumeric Characters Only" required>
-      {{!-- <h3><label>Password</label></h3> --}}
-          <input class="w3-input" type="password" id="reg_password" name="password" placeholder="Password" title="Alphabet Characters Only" required>
-      {{!-- <h3><label>Confirm Password</label></h3> --}}
-          <input class="w3-input" type="password" id="reg_password" placeholder="Confirm Password" required>
-          <button type="submit" class="w3-button w3-red regBtn">Register</button>
-      </form>
-  </div>
-</div> <!-- end row for registration div -->
+        <div id="register" class="w3-col s6 w3-mobile">
+            <!-- action="/" method="POST" -->
+            <form class="w3-panel w3-card-4" action="/register" method="post">
+                <h2 style="text-align: center">New User?</h2>
+                {{!-- PLEASE check with Jonathan before changing any of the form's 'name=' attributes. very important --}} {{!--
+                <h3>
+                    <label>First Name</label>
+                </h3> --}}
+                <input class="w3-input" type="text" id="reg_fn" name="firstName" pattern="[a-zA-Z\s]{0,30}" placeholder="First Name" title="Alphabet Characters Only"
+                    required> {{!--
+                <h3>
+                    <label>Last Name</label>
+                </h3> --}}
+                <input class="w3-input" type="text" id="reg_ln" name="lastName" pattern="[a-zA-Z\s]{0,30}" placeholder="Last Name" title="Alphabet Characters Only"
+                    required> {{!--
+                <h3>
+                    <label>Username</label>
+                </h3> --}}
+                <input class="w3-input" type="text" id="reg_username" name="username" pattern="[a-zA-Z0-9\s]{0,30}" placeholder="Username"
+                    title="Alphanumeric Characters Only" required> {{!--
+                <h3>
+                    <label>Password</label>
+                </h3> --}}
+                <input class="w3-input" type="password" id="reg_password" name="password" placeholder="Password" title="Alphabet Characters Only"
+                    required> {{!--
+                <h3>
+                    <label>Confirm Password</label>
+                </h3> --}}
+                <input class="w3-input" type="password" id="reg_password" placeholder="Confirm Password" required>
+                <button type="submit" class="w3-button w3-red regBtn">Register</button>
+            </form>
+        </div>
+    </div>
+    <!-- end row for registration div -->
 
 </div>
-</div> <!-- end zclass sidebar -->
+<!-- end zclass sidebar -->
