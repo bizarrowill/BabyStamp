@@ -1,39 +1,63 @@
-h1 {
-  text-align: center;
+/* Baby Stamp */
+
+#babystamp {
+position: absolute;
+width: 292px;
+height: 331px;
+left: 276px;
+top: 331px;
+
+font-family: Inika;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 96px;
+
+color: #000000;
 }
 
-.todo-list {
-  margin-top: 75px;
+
+/* Group 2 */
+#loginBox {
+position: absolute;
+width: 403px;
+height: 64px;
+left: 892px;
+top: 363px;
 }
 
-.list-group-item {
-  height: 50px;
-  line-height: 2;
+/* create your account */
+#create-account {
+position: absolute;
+width: 327px;
+height: 47px;
+left: 915px;
+top: 892px;
+
+font-family: Inika;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 36px;
+
+color: #FFFFFF;
 }
 
-input.new-item {
-  width: 75%;
-  height: 35px;
-  margin-top: 25px;
-  margin-right: 25px;
-}
 
-.list-group-item.new-item {
-  height: 100px;
-}
+/* Group -right side of login page */
 
-input.new-item:focus {
-  outline: none;
+/* body {
+  background: #ffffff
 }
+body:after {
+  content:'';
+  position: fixed;
+  display:show;
+  height: 100%;
+  width: 50%;
+  left: 50%;
+  background: #56CCF2;
+} */
 
-.list-group-item > button.delete,
-.list-group-item > button.complete {
-  float: right;
-  height: 25px;
-  margin-top: 3px;
-  line-height: 0.5;
-}
 
-.edit {
-  width: 100%;
-}
+
