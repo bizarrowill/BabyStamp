@@ -1,5 +1,11 @@
+// created username column JP
+
 module.exports = function(sequelize, DataTypes) {
   var Stamp = sequelize.define("Stamp", {
+    username:{
+      type: DataTypes.STRING,
+
+    },
     text: {
       type: DataTypes.STRING,
       // AllowNull is a flag that restricts a Stamp from being entered if it doesn't
