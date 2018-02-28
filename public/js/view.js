@@ -46,12 +46,22 @@ $(document).ready(function() {
   }
 
   // This function handles showing the input box for a user to edit a stamp
+  // Add stamp text to activity
   function editStamp() {
     var currentStamp = $(this).data("stamp");
-    $(this).children().hide();
-    $(this).children("input.edit").val(currentStamp.text);
-    $(this).children("input.edit").show();
-    $(this).children("input.edit").focus();
+
+    console.log('currentStamp', currentStamp);
+    // TODO: add current stamp to activity
+    $.ajax({
+      method: "POST",
+      url: "/api/activity",
+      data: { stamp: currentStamp }
+    });
+
+    //$(this).children().hide();
+    //$(this).children("input.edit").val(currentStamp.text);
+    //$(this).children("input.edit").show();
+    //$(this).children("input.edit").focus();
   }
 
   // Toggles complete status
