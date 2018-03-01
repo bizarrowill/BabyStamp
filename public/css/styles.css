@@ -1,67 +1,4 @@
 /* Baby Stamp */
-<<<<<<< HEAD
-
-#babystamp {
-position: absolute;
-width: 292px;
-height: 331px;
-left: 276px;
-top: 331px;
-
-font-family: Inika;
-font-style: normal;
-font-weight: normal;
-line-height: normal;
-font-size: 96px;
-
-color: #000000;
-}
-
-
-/* Group 2 */
-#loginBox {
-position: absolute;
-width: 403px;
-height: 64px;
-left: 892px;
-top: 363px;
-}
-
-/* create your account */
-#create-account {
-position: absolute;
-width: 327px;
-height: 47px;
-left: 915px;
-top: 892px;
-
-font-family: Inika;
-font-style: normal;
-font-weight: normal;
-line-height: normal;
-font-size: 36px;
-
-color: #FFFFFF;
-}
-
-
-/* Group -right side of login page */
-
-/* body {
-  background: #ffffff
-}
-body:after {
-  content:'';
-  position: fixed;
-  display:show;
-  height: 100%;
-  width: 50%;
-  left: 50%;
-  background: #56CCF2;
-} */
-
-
-=======
 h1 {
   position: absolute;
   width: 292px;
@@ -184,5 +121,4 @@ line-height: normal;
 font-size: 36px;
 
 color: #BDBDBD;
->>>>>>> d549dbe7c44bdd5a30a4210e560fde9d2afe07ed
 
