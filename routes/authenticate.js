@@ -3,13 +3,13 @@ var passport = require("passport");
 var application = application = require('./application');
 
 module.exports = function(app) {
-    app.get('/login', application.IsAuthenticated, function(req,res) {
+    app.get('/loginpage', application.IsAuthenticated, function(req,res) {
         res.redirect("index")
     })
 
     app.post('/authenticate',
     passport.authenticate('local',{
-    successRedirect: '/login',
+    successRedirect: '/loginpage',
     failureRedirect: '/'
     })
     )
