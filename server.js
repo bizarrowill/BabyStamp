@@ -84,8 +84,4 @@ db.sequelize.sync()
 			console.log("App listening on PORT: " + PORT);
 	});
 
-<<<<<<< HEAD
 //dave
-=======
-//dave
->>>>>>> a9e65eb1a7a672337592a9ddd2575c0b639db426
