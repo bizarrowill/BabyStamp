@@ -2,7 +2,12 @@
 
 module.exports = function(sequelize, DataTypes) {
   var Stamp = sequelize.define("Stamp", {
-
+  username: {
+    type: DataTypes.STRING,
+    // defaultValue is a flag that defaults a new Stamps complete value to false if
+    // it isn't supplied one
+    defaultValue: false
+  },
     text: {
       type: DataTypes.STRING,
       // AllowNull is a flag that restricts a Stamp from being entered if it doesn't
@@ -20,5 +25,6 @@ module.exports = function(sequelize, DataTypes) {
       defaultValue: false
     }
   });
+  Stamp.belongsTo(username);
   return Stamp;
 };
