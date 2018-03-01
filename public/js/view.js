@@ -110,11 +110,11 @@ $(document).ready(function() {
       [
         "<li class='list-group-item stamp-item'>",
         "<span>",
-        stamp.text,
+        
         "</span>",
         "<input type='text' class='edit' style='display: none;'>",
-        "<button class='delete btn btn-default'>x</button>",
-        "<button class='complete btn btn-default'>✓</button>",
+        // "<button class='delete btn btn-default'>x</button>",
+        "<button class='complete btn btn-default'>"+stamp.text+"</button>",
         "</li>"
       ].join("")
     );
