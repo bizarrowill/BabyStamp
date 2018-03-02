@@ -80,7 +80,7 @@ require("./routes/html-routes.js")(app);
 db.sequelize.sync()
 	.then(function(err){
 		});
-		app.listen(PORT, function() {
+		app.listen(port, function() {
 			console.log("App listening on PORT: " + port);
 	});
 module.exports = app

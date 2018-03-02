@@ -20,7 +20,8 @@
     "passport-local": "^1.0.0",
     "password": "^0.1.1",
     "sequelize": "^4.8.4",
-    "sequelize-cli": "^3.0.0-3"
+    "sequelize-cli": "^3.0.0-3",
+    "sequelize-heroku": "^1.0.0"
   },
   "devDependencies": {},
   "scripts": {
