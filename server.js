@@ -85,3 +85,4 @@ db.sequelize.sync()
 	});
 
 //dave
+module.exports = app;

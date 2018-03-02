@@ -78,6 +78,17 @@ z-index: -1;
   color: #FFFFFF;
 
 }
+
+/* Ellipse */
+#submit-cre {
+position: absolute;
+width: 256px;
+height: 130px;
+left: 923px;
+top: 480px;
+
+background: #FFFFFF;
+}
   /* Group
 
 position: absolute;

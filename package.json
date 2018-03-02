@@ -6,6 +6,7 @@
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.1",
+    "chai": "^4.1.2",
     "cookie-parser": "^1.4.3",
     "express": "^4.15.4",
     "express-handlebars": "^3.0.0",
@@ -15,6 +16,7 @@
     "moment": "^2.18.1",
     "mysql": "^2.14.1",
     "mysql2": "^1.4.2",
+    "nightmare": "^2.10.0",
     "node-gyp": "^3.6.2",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
