@@ -1,10 +1,11 @@
 /* Baby Stamp */
+
 h1 {
   position: absolute;
   width: 292px;
   height: 331px;
   left: 276px;
-  top: 331px;
+  top: 200px;
 
   font-family: Inika;
   font-style: normal;
@@ -14,6 +15,7 @@ h1 {
 
   color: #000000;
 }
+
 h2 {
   font-family: Inika;
   font-style: normal;
@@ -97,6 +99,30 @@ left: 923px;
 top: 480px;
 
 background: #FFFFFF;
+}
+
+#submit-cre {
+position: absolute;
+width: 256px;
+height: 130px;
+left: 923px;
+top: 480px;
+
+background: #FFFFFF;
+}
+
+#submit {
+height: 100px;
+width: 200px;
+margin-top: 40px;
+position: relative;
+left: 90px;
+border-radius: 45%;
+color: #BDBDBD;
+}
+
+input{
+  text-align:center;
 }
 
 .inputform {
