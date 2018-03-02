@@ -1,10 +1,11 @@
 /* Baby Stamp */
+
 h1 {
   position: absolute;
   width: 292px;
   height: 331px;
   left: 276px;
-  top: 331px;
+  top: 200px;
 
   font-family: Inika;
   font-style: normal;
@@ -14,6 +15,7 @@ h1 {
 
   color: #000000;
 }
+<<<<<<< HEAD
 /* ! */
 #point {
 position: absolute;
@@ -29,6 +31,17 @@ line-height: normal;
 font-size: 288px;
 
 color: #56CCF2;
+=======
+
+h2 {
+  font-family: Inika;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 72px;
+  
+  color: #000000;
+>>>>>>> 2ded95b15b1f1e315c0a56129804035425678edc
 }
 /* Text box where you create a new stamp in profile page */
 .new-item {
@@ -76,9 +89,117 @@ z-index: -1;
 
   }
 
+<<<<<<< HEAD
   /* Group */
 #usr{
 /* position: absolute;
+=======
+  /* Welcome :) */
+#welcome-signup {
+  position: absolute;
+  width: 372px;
+  height: 94px;
+  left: 865px;
+  top: 211px;
+  z-index: 1;
+
+  font-family: Inika;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 72px;
+
+  color: #FFFFFF;
+
+}
+
+/* Ellipse */
+#submit-cre {
+position: absolute;
+width: 256px;
+height: 130px;
+left: 923px;
+top: 480px;
+
+background: #FFFFFF;
+}
+
+#submit-cre {
+position: absolute;
+width: 256px;
+height: 130px;
+left: 923px;
+top: 480px;
+
+background: #FFFFFF;
+}
+
+#submit {
+height: 100px;
+width: 200px;
+margin-top: 40px;
+position: relative;
+left: 90px;
+border-radius: 45%;
+color: #BDBDBD;
+}
+
+input{
+  text-align:center;
+}
+
+.inputform {
+  margin: 20px;
+  border: 3px solid #56CCF2;
+  box-sizing: border-box;
+}
+
+#register {
+  text-align: center;
+  vertical-align: middle;
+  float: left;
+  margin-left: 10%;
+  margin-top: 18%;
+}
+
+#loginBox {
+  position: absolute;
+  width: 372px;
+  height: 94px;
+  left: 865px;
+  top: 211px;
+  z-index: 1;
+
+  font-family: Inika;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 36px;
+
+  color: #FFFFFF;
+}
+
+#createaccount {
+  position: absolute;
+  width: 327px;
+  height: 47px;
+  left: 915px;
+  top: 600px;
+  z-index: 1;
+
+  font-family: Inika;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 36px;
+
+  color: #FFFFFF;
+}
+
+  /* Group
+
+position: absolute;
+>>>>>>> 2ded95b15b1f1e315c0a56129804035425678edc
 width: 743px;
 height: 1024px;
 left: 697px;
