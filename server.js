@@ -86,3 +86,4 @@ db.sequelize.sync()
 	module.exports = app;
 
 //dave
+module.exports = app;
