@@ -14,6 +14,15 @@ h1 {
 
   color: #000000;
 }
+h2 {
+  font-family: Inika;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 72px;
+  
+  color: #000000;
+}
 /* Text box where you create a new stamp in profile page */
 .new-item {
 /* position: absolute; */
@@ -90,21 +99,20 @@ top: 480px;
 background: #FFFFFF;
 }
 
-/* submit */
+.inputform {
+  margin: 20px;
+  border: 3px solid #56CCF2;
+  box-sizing: border-box;
+}
 
-position: absolute;
-width: 154px;
-height: 63px;
-left: 974px;
-top: 513px;
+#register {
+  text-align: center;
+  vertical-align: middle;
+  float: left;
+  margin-left: 10%;
+  margin-top: 18%;
+}
 
-font-family: Inika;
-font-style: normal;
-font-weight: normal;
-line-height: normal;
-font-size: 48px;
-
-color: #BDBDBD;
   /* Group
 
 position: absolute;
