@@ -46,8 +46,18 @@ $(document).ready(function() {
   }
 
   // This function handles showing the input box for a user to edit a stamp
+  // Add stamp text to activity
   function editStamp() {
     var currentStamp = $(this).data("stamp");
+
+    console.log('currentStamp', currentStamp);
+    // TODO: add current stamp to activity
+    $.ajax({
+      method: "POST",
+      url: "/api/activity",
+      data: { stamp: currentStamp }
+    });
+
     $(this).children().hide();
     $(this).children("input.edit").val(currentStamp.text);
     $(this).children("input.edit").show();
@@ -98,13 +108,13 @@ $(document).ready(function() {
   function createNewRow(stamp) {
     var $newInputRow = $(
       [
-        "<li class='list-group-item stamp-item'>",
+        "<li class='stamp-item'>",
         "<span>",
-        stamp.text,
+        
         "</span>",
-        "<input type='text' class='edit' style='display: none;'>",
-        "<button class='delete btn btn-default'>x</button>",
-        "<button class='complete btn btn-default'>✓</button>",
+        "<input type='text' class='edit' style='display: edit;'>",
+        "<button class='delete glyphicon glyphicon-ban-circle'></button>",
+        "<button class='complete'>"+stamp.text+"</button>",
         "</li>"
       ].join("")
     );

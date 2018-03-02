@@ -4,8 +4,21 @@
 // ******************************************************************************
 // *** Dependencies
 // =============================================================
+//dave
 var express = require("express");
 var bodyParser = require("body-parser");
+var cookieParser = require('cookie-parser');
+var session = require('express-session');
+var methodOverride = require("method-override");
+var path = require("path");
+var http = require('http');
+var passport = require('passport');
+var passportConfig = require('./config/passport')
+var application = require('./routes/application');
+
+
+SALT_WORK_FACTOR = 12;
+//dave
 
 // Sets up the Express App
 // =============================================================
@@ -18,16 +31,32 @@ var db = require("./models");
 // Sets up the Express app to handle data parsing
 
 // parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 // parse application/json
 app.use(bodyParser.json());
 
 // Static directory
 app.use(express.static("public"));
 
+//dave
+//added from passport.js authentication example
+app.use(cookieParser());
+//settings from express-session
+app.use(session({
+    secret: 'keepsyoulogged',
+    resave: false,
+    saveUninitialized: false}))
+app.use(passport.initialize())
+app.use(passport.session())
+
+app.use(methodOverride("_method"));
+//dave
+
 // Set Handlebars.
 var exphbs = require("express-handlebars");
-
+//dave
+require('./public/js/handlebars.js')(exphbs);
+//dave
 //________________________________________________________________
 //Direct us to where the handle bars gets pointed at 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
@@ -35,6 +64,11 @@ app.set("view engine", "handlebars");
 
 // Routes
 // =============================================================
+//dave
+require("./routes/authenticate.js")(app);
+require("./routes/api-user.js")(app);
+//dave
+
 require("./routes/api-routes.js")(app);
 require("./routes/html-routes.js")(app);
 
@@ -42,8 +76,14 @@ require("./routes/html-routes.js")(app);
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
-db.sequelize.sync({ force: false }).then(function() {
-  app.listen(PORT, function() {
-    console.log("App listening on PORT " + PORT);
-  });
-});
+//dave
+db.sequelize.sync()
+	.then(function(err){
+		});
+		app.listen(PORT, function() {
+			console.log("App listening on PORT: " + PORT);
+	});
+	module.exports = app;
+
+//dave
+module.exports = app;
