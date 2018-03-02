@@ -58,10 +58,10 @@ $(document).ready(function() {
       data: { stamp: currentStamp }
     });
 
-    //$(this).children().hide();
-    //$(this).children("input.edit").val(currentStamp.text);
-    //$(this).children("input.edit").show();
-    //$(this).children("input.edit").focus();
+    $(this).children().hide();
+    $(this).children("input.edit").val(currentStamp.text);
+    $(this).children("input.edit").show();
+    $(this).children("input.edit").focus();
   }
 
   // Toggles complete status
@@ -108,13 +108,13 @@ $(document).ready(function() {
   function createNewRow(stamp) {
     var $newInputRow = $(
       [
-        "<li class='list-group-item stamp-item'>",
+        "<li class='stamp-item'>",
         "<span>",
         
         "</span>",
-        "<input type='text' class='edit' style='display: none;'>",
-        // "<button class='delete btn btn-default'>x</button>",
-        "<button class='complete btn btn-default'>"+stamp.text+"</button>",
+        "<input type='text' class='edit' style='display: edit;'>",
+        "<button class='delete glyphicon glyphicon-ban-circle'></button>",
+        "<button class='complete'>"+stamp.text+"</button>",
         "</li>"
       ].join("")
     );

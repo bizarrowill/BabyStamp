@@ -6,13 +6,11 @@ h1 {
   height: 331px;
   left: 276px;
   top: 200px;
-
   font-family: Inika;
   font-style: normal;
   font-weight: normal;
   line-height: normal;
   font-size: 96px;
-
   color: #000000;
 }
 /* ! */
@@ -23,61 +21,71 @@ height: 376px;
 left: 559px;
 top: 273px;
 
-font-family: Inika;
-font-style: normal;
-font-weight: normal;
-line-height: normal;
-font-size: 288px;
-
-color: #56CCF2;
+h2 {
+  font-family: Inika;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 72px;
+  color: #000000;
 }
+
 /* Text box where you create a new stamp in profile page */
+
 .new-item {
-/* position: absolute; */
-width: 403px;
-height: 64px;
-left: 767px;
-top: 167px;
+  /* position: absolute; */
+  width: 403px;
+  height: 64px;
+  left: 767px;
+  top: 167px;
+}
+
+#edit-stamp {
+  font-family: Inika;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 24px;
+  color: #FFFFFF;
 }
 
 /* Create your Stamp */
-h3 {
-  /* position: absolute; */
+
+#activityheader {
+  position: absolute;
   width: 309px;
   height: 47px;
   left: 767px;
   top: 88px;
-
   font-family: Inika;
   font-style: normal;
   font-weight: normal;
   line-height: normal;
   font-size: 36px;
-
   color: #ffffff;
 }
 
-
 /* Background right side */
-#right{
-position: absolute;
-float: left;
-width: 743px;
-height: 1024px;
-left: 697px;
-top: 0px;
-background: #56CCF2;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-z-index: -1;
+
+#right {
+  position: absolute;
+  float: left;
+  width: 743px;
+  height: 1024px;
+  left: 697px;
+  top: 0px;
+  background: #56CCF2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: -1;
 }
 
-#left{
+#left {
+  background: #E5E5E5;
+  ;
+}
 
-  background: #E5E5E5;;
+/* Welcome :) */
 
-  }
-
-  /* Welcome :) */
 #welcome-signup {
   position: absolute;
   width: 372px;
@@ -85,50 +93,67 @@ z-index: -1;
   left: 865px;
   top: 211px;
   z-index: 1;
-
   font-family: Inika;
   font-style: normal;
   font-weight: normal;
   line-height: normal;
   font-size: 72px;
-
   color: #FFFFFF;
-
 }
 
-/* Ellipse */
-#submit-cre {
-position: absolute;
-width: 256px;
-height: 130px;
-left: 923px;
-top: 480px;
+/* buttons on profile page */
 
-background: #FFFFFF;
+.complete {
+  border-radius: 50%;
+  color: #BDBDBD;
+  width: 200px;
+  height: 200px;
+  background: #FFFFFF;
+  font-family: Inika;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 72px;
+}
+
+#submit-act {
+  width: 150px;
+  height: 81px;
+  left: 1203px;
+  top: 162px;
+  border-radius: 45%;
+  color: #BDBDBD;
+  background: #FFFFFF;
+  font-family: Inika;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 36px;
 }
 
 #submit-cre {
-position: absolute;
-width: 256px;
-height: 130px;
-left: 923px;
-top: 480px;
-
-background: #FFFFFF;
+  position: absolute;
+  width: 256px;
+  height: 130px;
+  left: 923px;
+  top: 480px;
+  border-radius: 45%;
+  color: #BDBDBD;
+  background: #FFFFFF;
 }
 
 #submit {
-height: 100px;
-width: 200px;
-margin-top: 40px;
-position: relative;
-left: 90px;
-border-radius: 45%;
-color: #BDBDBD;
+  height: 100px;
+  width: 200px;
+  margin-top: 40px;
+  position: relative;
+  left: 90px;
+  border-radius: 45%;
+  color: #BDBDBD;
 }
 
-input{
-  text-align:center;
+input {
+  text-align: center;
 }
 
 .inputform {
@@ -152,34 +177,76 @@ input{
   left: 865px;
   top: 211px;
   z-index: 1;
-
   font-family: Inika;
   font-style: normal;
   font-weight: normal;
   line-height: normal;
   font-size: 36px;
-
   color: #FFFFFF;
 }
 
 #createaccount {
   position: absolute;
+  margin-top: 30px;
   width: 327px;
   height: 47px;
   left: 915px;
   top: 600px;
   z-index: 1;
-
   font-family: Inika;
   font-style: normal;
   font-weight: normal;
   line-height: normal;
   font-size: 36px;
-
   color: #FFFFFF;
 }
 
-  /* Group
+/* activity log */
+#activity-log{
+position: absolute;
+width: 185px;
+height: 47px;
+left: 169px;
+top: 508px;
+
+font-family: Inika;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 36px;
+
+color: #BDBDBD;
+
+}
+
+/* Current User Display */
+#current-user{
+position: absolute;
+width: 338px;
+height: 68.11px;
+left: 159px;
+top: 349.89px;
+
+font-family: Inika;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 36px;
+
+color: #BDBDBD;
+}
+
+/* profile photo */
+#profile-pic{
+position: absolute;
+width: 281.67px;
+height: 252.16px;
+left: 177px;
+top: 83px;
+
+background: url(image.png);
+}
+/* Group
 
 position: absolute;
 width: 743px;
@@ -187,8 +254,6 @@ height: 1024px;
 left: 697px;
 top: 0px; */
 }
-
-
 
 /* Group 2 */
 
@@ -198,8 +263,6 @@ height: 64px;
 left: 892px;
 top: 363px; */
 
-
-
 /* Group 3 */
 
 /* position: absolute;
@@ -207,8 +270,6 @@ width: 403px;
 height: 64px;
 left: 892px;
 top: 467px; */
-
-
 
 /* password */
 
@@ -226,7 +287,6 @@ font-size: 36px;
 
 color: #BDBDBD; */
 
-
 /* email adderess */
 
 /* position: absolute;
@@ -242,4 +302,3 @@ line-height: normal;
 font-size: 36px;
 
 color: #BDBDBD; */
-
