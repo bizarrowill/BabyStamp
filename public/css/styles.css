@@ -107,7 +107,8 @@ width: 256px;
 height: 130px;
 left: 923px;
 top: 480px;
-
+border-radius: 45%;
+color: #BDBDBD;
 background: #FFFFFF;
 }
 
