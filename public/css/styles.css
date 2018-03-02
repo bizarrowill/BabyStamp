@@ -113,6 +113,40 @@ background: #FFFFFF;
   margin-top: 18%;
 }
 
+#loginBox {
+  position: absolute;
+  width: 372px;
+  height: 94px;
+  left: 865px;
+  top: 211px;
+  z-index: 1;
+
+  font-family: Inika;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 36px;
+
+  color: #FFFFFF;
+}
+
+#createaccount {
+  position: absolute;
+  width: 327px;
+  height: 47px;
+  left: 915px;
+  top: 600px;
+  z-index: 1;
+
+  font-family: Inika;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 36px;
+
+  color: #FFFFFF;
+}
+
   /* Group
 
 position: absolute;

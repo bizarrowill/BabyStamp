@@ -1,46 +1,49 @@
 {{!-- This the first page that appers for the user .JP--}}
 
 <div class="container">
-  <div id="right">
+  <div id="left">
 
 
   </div>
 
 
 
-  <div class="container">
+  <div>
     <h1>Baby Stamp</h1>
   </div>
 
-  <div class="row">
-    <div id="loginBox">
-      <!-- action="/" method="POST" -->
-      <form action="/authenticate" method="post">
-        <h3>
-          <label>Username</label>
-        </h3>
-        <input class="input" type="text" id="username" name="username" pattern="[a-zA-Z0-9\s]{0,30}" title="Alphanumeric characters only"
-          placeholder="Username" required>
-        <h3>
-          <label>Password</label>
-        </h3>
-        <input class="input" type="password" id="password" name="password" placeholder="Password" required>
-        <button id="submit" type="submit">Login</button>
-      </form>
-    </div>
 
-
-    <div class="container">
-      <div>
-        <h2>
-          <a href="/signup">create your account</a>
-        </h2>
-      </div>
-    </div>
-    <!-- end second column for registration link -->
+  <div id="loginBox">
+    <!-- action="/" method="POST" -->
+    <form action="/authenticate" method="post">
+      <h3>
+        <label>Username</label>
+      </h3>
+      <input class="input" type="text" id="username" name="username" pattern="[a-zA-Z0-9\s]{0,30}" title="Alphanumeric characters only"
+        placeholder="Username" required>
+      <h3>
+        <label>Password</label>
+      </h3>
+      <input class="input" type="password" id="password" name="password" placeholder="Password" required>
+      <button id="submit" type="submit">Login</button>
+    </form>
   </div>
-  <!-- end row -->
-</div>
-<!-- end main container -->
-</div>
+
+
+
+  <div id="createaccount">
+    <h2>
+      <a href="/signup">create your account</a>
+    </h2>
+  </div>
+
+  <!-- end second column for registration link -->
+  <div id="right">
+
+
+
+  </div>
+
+
+  <!-- end main container -->
 </div>
