@@ -1,50 +1,46 @@
 {{!-- This the first page that appers for the user .JP--}}
 
+<div class="container">
+  <div id="right"></div>
 
-<div id="right">
-
-
-</div>
-
+  <div id="left"></div>
 
 
-<div class="container" 
-<div >
-  <h1>Baby Stamp</h1>
-</div>
+  <div>
+    <h1>Baby Stamp</h1><Span><div id="point">!</div></Span>
 
-<div class="row">
-  <div id="loginBox">
-    <!-- action="/" method="POST" -->
-    <form action="/authenticate" method="post">
-      <h2 style="text-align: center">Returning User?</h2>
-      <h3>
-        <label>Username</label>
-      </h3>
-      <input class="input" type="text" id="username" name="username" pattern="[a-zA-Z0-9\s]{0,30}" title="Alphanumeric characters only"
-        placeholder="Username" required>
-      <h3>
-        <label>Password</label>
-      </h3>
-      <input class="input" type="password" id="password" name="password" placeholder="Password" required>
-      <button type="submit">Login</button>
-    </form>
   </div>
 
-
-
-
-
-  <div class="container">
-    <div>
-      <h2>
-        <a href="/signup">create your account</a>
-      </h2>
+  <div class="row">
+    <div id="loginBox">
+      <!-- action="/" method="POST" -->
+      <form action="/authenticate" method="post">
+        <h3>
+          <label>Username</label>
+        </h3>
+        <input class="input" type="text" id="username" name="username" pattern="[a-zA-Z0-9\s]{0,30}" title="Alphanumeric characters only"
+          placeholder="Username" required>
+        <h3>
+          <label>Password</label>
+        </h3>
+        <input class="input" type="password" id="password" name="password" placeholder="Password" required>
+        <button id="submit" type="submit">Login</button>
+      </form>
     </div>
+
+
+
+
+
+    <div class="container">
+      <div>
+        <h2>
+          <a href="/signup">create your account</a>
+        </h2>
+      </div>
+    </div>
+    <!-- end second column for registration link -->
   </div>
-  <!-- end second column for registration link -->
-</div>
-<!-- end row -->
+  <!-- end row -->
 </div>
 <!-- end main container -->
-</div>
