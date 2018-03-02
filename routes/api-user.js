@@ -9,7 +9,7 @@ module.exports = function(app) {
     function hasProp (obj, prop) {
         return Object.prototype.hasOwnProperty.call(obj, prop);
       }
-    //renders the loginpage
+    //renders the landing page
     app.get("/", function(req,res) {
         if (hasProp(req, 'user')) {
             var hbsObj = {

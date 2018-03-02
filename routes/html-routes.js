@@ -1,6 +1,7 @@
 // *********************************************************************************
 // api-routes.js - this file offers a set of routes for displaying and saving data to the db
 // *********************************************************************************
+// in this area we pull sql data and append onto into handle handlebars JP
 
 // Dependencies
 // =============================================================
@@ -24,5 +25,4 @@ module.exports = function(app) {
   app.get("/index", function( req, res ) {
     res.render("index", {});
   });
-
 };

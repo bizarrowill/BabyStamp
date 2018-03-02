@@ -1,39 +1,143 @@
+/* Baby Stamp */
 h1 {
-  text-align: center;
+  position: absolute;
+  width: 292px;
+  height: 331px;
+  left: 276px;
+  top: 331px;
+
+  font-family: Inika;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 96px;
+
+  color: #000000;
+}
+/* Text box where you create a new stamp in profile page */
+.new-item {
+/* position: absolute; */
+width: 403px;
+height: 64px;
+left: 767px;
+top: 167px;
 }
 
-.todo-list {
-  margin-top: 75px;
+/* Create your Stamp */
+h3 {
+  /* position: absolute; */
+  width: 309px;
+  height: 47px;
+  left: 767px;
+  top: 88px;
+
+  font-family: Inika;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 36px;
+
+  color: #ffffff;
 }
 
-.list-group-item {
-  height: 50px;
-  line-height: 2;
+
+/* Background right side */
+#right{
+position: absolute;
+float: left;
+width: 743px;
+height: 1024px;
+left: 697px;
+top: 0px;
+background: #56CCF2;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+z-index: -1;
 }
 
-input.new-item {
-  width: 75%;
-  height: 35px;
-  margin-top: 25px;
-  margin-right: 25px;
-}
+#left{
 
-.list-group-item.new-item {
-  height: 100px;
-}
+  background: #E5E5E5;;
 
-input.new-item:focus {
-  outline: none;
-}
+  }
 
-.list-group-item > button.delete,
-.list-group-item > button.complete {
-  float: right;
-  height: 25px;
-  margin-top: 3px;
-  line-height: 0.5;
-}
+  /* Welcome :) */
+#welcome-signup {
+  position: absolute;
+  width: 372px;
+  height: 94px;
+  left: 865px;
+  top: 211px;
+  z-index: 1;
 
-.edit {
-  width: 100%;
+  font-family: Inika;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 72px;
+
+  color: #FFFFFF;
+
 }
+  /* Group
+
+position: absolute;
+width: 743px;
+height: 1024px;
+left: 697px;
+top: 0px; */
+
+
+
+/* Group 2 */
+
+/* position: absolute;
+width: 403px;
+height: 64px;
+left: 892px;
+top: 363px; */
+
+
+
+/* Group 3 */
+
+/* position: absolute;
+width: 403px;
+height: 64px;
+left: 892px;
+top: 467px; */
+
+
+
+/* password */
+
+/* position: absolute;
+width: 160px;
+height: 47px;
+left: 996px;
+top: 476px;
+
+font-family: Inika;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 36px;
+
+color: #BDBDBD; */
+
+
+/* email adderess */
+
+/* position: absolute;
+width: 248px;
+height: 47px;
+left: 945px;
+top: 374px;
+
+font-family: Inika;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 36px;
+
+color: #BDBDBD; */
+

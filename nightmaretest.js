@@ -19,7 +19,7 @@ describe("BabyStamp", function() {
       .click("#submit")
 
       // Click the catalog link
-      // .click("a[href='/learn/all']")
+
       // Evaluate the title
       .evaluate(function() {
         return document.title;
@@ -30,28 +30,5 @@ describe("BabyStamp", function() {
         done();
       });
   });
-
-  // it("should present a link to course catalog after login", function(done) {
-  //   new Nightmare({ show: true })
-  //     .goto("localhost:8080")
-  //     // Enter username.
-  //     .type("#username", "test")
-  //     // Enter password.
-  //     .type("#password", "1234")
-  //     // Click the login button
-  //     .click("#submit")
-  //     // Evaluate the following selector
-  //     .evaluate(function() {
-  //       // Assert the "learn" link can be found
-  //       return document.querySelector("a[href='/learn']");
-  //     })
-  //     .then(function(link) {
-  //       expect(link).to.not.equal(undefined);
-  //       done();
-  //     });
-  // });
-
-  // it("should throw an error for fun", function() {
-  //   throw new Error("Failed on purpose, just to make the Mocha output more interesting.");
-  // });
+  
 });

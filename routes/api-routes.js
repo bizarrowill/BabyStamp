@@ -40,6 +40,28 @@ module.exports = function(app) {
     });
   });
 
+  // POST route for adding a stamp to activity (JP)
+  app.post("/api/activity", function(req, res) {
+    // create takes an argument of an object describing the item we want to
+    // insert into our table. In this case we just we pass in an object with a text
+    // and complete property (req.body)
+    console.log('req.body', req.body);
+    console.log('req.body.text', req.body.stamp.text);
+    // ===============================================================
+    /*db.activity.create({
+      text: req.body.text,
+      complete: req.body.complete
+    }).then(function(dbStamp) {
+      // We have access to the new Stamp as an argument inside of the callback function
+      res.json(dbStamp);
+    })
+    .catch(function(err) {
+      // Whenever a validation or flag fails, an error is thrown
+      // We can "catch" the error to prevent it from being "thrown", which could crash our node app
+      res.json(err);
+    });*/
+  });
+
   // DELETE route for deleting stamps. We can get the id of the Stamp to be deleted from
   // req.params.id
   app.delete("/api/stamps/:id", function(req, res) {
