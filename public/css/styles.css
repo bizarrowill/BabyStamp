@@ -15,7 +15,6 @@ h1 {
 
   color: #000000;
 }
-<<<<<<< HEAD
 /* ! */
 #point {
 position: absolute;
@@ -31,17 +30,6 @@ line-height: normal;
 font-size: 288px;
 
 color: #56CCF2;
-=======
-
-h2 {
-  font-family: Inika;
-  font-style: normal;
-  font-weight: normal;
-  line-height: normal;
-  font-size: 72px;
-  
-  color: #000000;
->>>>>>> 2ded95b15b1f1e315c0a56129804035425678edc
 }
 /* Text box where you create a new stamp in profile page */
 .new-item {
@@ -89,11 +77,6 @@ z-index: -1;
 
   }
 
-<<<<<<< HEAD
-  /* Group */
-#usr{
-/* position: absolute;
-=======
   /* Welcome :) */
 #welcome-signup {
   position: absolute;
@@ -199,7 +182,6 @@ input{
   /* Group
 
 position: absolute;
->>>>>>> 2ded95b15b1f1e315c0a56129804035425678edc
 width: 743px;
 height: 1024px;
 left: 697px;
