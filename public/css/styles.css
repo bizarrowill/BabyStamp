@@ -89,6 +89,22 @@ top: 480px;
 
 background: #FFFFFF;
 }
+
+/* submit */
+
+position: absolute;
+width: 154px;
+height: 63px;
+left: 974px;
+top: 513px;
+
+font-family: Inika;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 48px;
+
+color: #BDBDBD;
   /* Group
 
 position: absolute;

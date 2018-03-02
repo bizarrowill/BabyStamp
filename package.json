@@ -13,6 +13,7 @@
     "express-session": "^1.15.5",
     "handlebars": "^4.0.10",
     "method-override": "^2.3.9",
+    "mocha": "^5.0.1",
     "moment": "^2.18.1",
     "mysql": "^2.14.1",
     "mysql2": "^1.4.2",
