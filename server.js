@@ -23,7 +23,7 @@ SALT_WORK_FACTOR = 12;
 // Sets up the Express App
 // =============================================================
 var app = express();
-var port = process.env.PORT || 3000;
+var PORT = process.env.PORT || 8080;
 
 // Requiring our models for syncing
 var db = require("./models");
@@ -80,8 +80,8 @@ require("./routes/html-routes.js")(app);
 db.sequelize.sync()
 	.then(function(err){
 		});
-		app.listen(port, function() {
-			console.log("App listening on PORT: " + port);
+		app.listen(PORT, function() {
+			console.log("App listening on PORT: " + PORT);
 	});
 module.exports = app
 //dave
