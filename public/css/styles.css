@@ -13,13 +13,6 @@ h1 {
   font-size: 96px;
   color: #000000;
 }
-/* ! */
-#point {
-position: absolute;
-width: 84px;
-height: 376px;
-left: 559px;
-top: 273px;
 
 h2 {
   font-family: Inika;
@@ -182,7 +175,7 @@ input {
   font-weight: normal;
   line-height: normal;
   font-size: 36px;
-  color: #FFFFFF;
+  color: rgb(148, 148, 148);
 }
 
 #createaccount {
@@ -246,59 +239,3 @@ top: 83px;
 
 background: url(image.png);
 }
-/* Group
-
-position: absolute;
-width: 743px;
-height: 1024px;
-left: 697px;
-top: 0px; */
-}
-
-/* Group 2 */
-
-/* position: absolute;
-width: 403px;
-height: 64px;
-left: 892px;
-top: 363px; */
-
-/* Group 3 */
-
-/* position: absolute;
-width: 403px;
-height: 64px;
-left: 892px;
-top: 467px; */
-
-/* password */
-
-/* position: absolute;
-width: 160px;
-height: 47px;
-left: 996px;
-top: 476px;
-
-font-family: Inika;
-font-style: normal;
-font-weight: normal;
-line-height: normal;
-font-size: 36px;
-
-color: #BDBDBD; */
-
-/* email adderess */
-
-/* position: absolute;
-width: 248px;
-height: 47px;
-left: 945px;
-top: 374px;
-
-font-family: Inika;
-font-style: normal;
-font-weight: normal;
-line-height: normal;
-font-size: 36px;
-
-color: #BDBDBD; */
