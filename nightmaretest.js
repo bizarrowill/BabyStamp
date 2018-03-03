@@ -12,9 +12,9 @@ describe("BabyStamp", function() {
     Nightmare({ show: true })
       .goto("http://localhost:8080")
             // Enter username.
-      .type("#username", "tuser")
+      .type("#username", "willtest")
       // Enter password.
-      .type("#password", "1234")
+      .type("#password", "password")
       // Click the login button
       .click("#submit")
 

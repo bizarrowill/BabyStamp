@@ -239,6 +239,17 @@ top: 83px;
 
 background: url(image.png);
 }
+
+/* main logo */
+#stamp-logo{
+position: absolute;
+width: 281.67px;
+height: 252.16px;
+left: 177px;
+top: 83px;
+
+background: url(logo.png);
+}
 /* Group
 
 position: absolute;
